@@ -69,6 +69,7 @@ app.use((err, req, res, next) => {
 
 // Socket.io
 const io = new Server(server, {
+  path: '/socket.io/',
   cors: corsOptions,
   pingTimeout: 60000,
   pingInterval: 25000
