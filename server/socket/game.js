@@ -27,7 +27,7 @@ const SPAWN_CONFIG = {
 };
 
 function initSocketHandlers(io) {
-  console.log('🎮 Initializing socket handlers...');
+  console.log('🎮 Initializing socket handlers...'+io);
   
   io.on('connection', (socket) => {
     console.log(`Player connected: ${socket.id}`);
