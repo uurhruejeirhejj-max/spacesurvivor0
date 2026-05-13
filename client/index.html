@@ -10,7 +10,7 @@
   <!-- Phaser 3 dari CDN -->
   <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
   <!-- Socket.io Client dari CDN -->
-  <script src="https://cdn.socket.io/4.7.0/socket.io.min.js"></script>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
 </head>
 <body>
   <div id="game-container"></div>
@@ -18,7 +18,6 @@
   <!-- Utils & Managers (paling awal) -->
   <script src="src/utils/constants.js"></script>
   <script src="src/managers/APIManager.js"></script>
-  <script src="src/managers/SocketManager.js"></script>
   
   <!-- Entities -->
   <script src="src/entities/Player.js"></script>
@@ -34,5 +33,6 @@
   
   <!-- Main (paling akhir) -->
   <script src="src/main.js"></script>
+  <script src="src/managers/SocketManager.js"></script>
 </body>
 </html>

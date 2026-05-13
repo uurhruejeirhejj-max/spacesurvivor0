@@ -19,14 +19,15 @@ const corsOptions = {
     if (!origin) return callback(null, true);
     
     const allowedOrigins = [
-      'http://localhost:8080',
-      'https://spacesurvivor0.netlify.app',
-      'https://spacesurvivor0.netlify.app/client',
-      'http://localhost:5500',
-      'http://127.0.0.1:5500',
-      'http://localhost:3000',
-      'capacitor://localhost', // For Capacitor
-      'ionic://localhost'      // For Ionic
+      '*'
+      // 'http://localhost:8080',
+      // 'https://spacesurvivor0.netlify.app',
+      // 'https://spacesurvivor0.netlify.app/client',
+      // 'http://localhost:5500',
+      // 'http://127.0.0.1:5500',
+      // 'http://localhost:3000',
+      // 'capacitor://localhost', // For Capacitor
+      // 'ionic://localhost'      // For Ionic
     ];
     
     if (allowedOrigins.indexOf(origin) !== -1 || process.env.NODE_ENV === 'development') {

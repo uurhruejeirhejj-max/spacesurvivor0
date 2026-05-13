@@ -8,7 +8,7 @@ class SocketManager {
   connect() {
     if (this.socket) return;
 
-    this.socket = io(CONSTANTS.SOCKET_URL, {
+    this.socket = io('https://spacesurvivo0.railway.app', {
       transports: ['websocket', 'polling'],
       reconnection: true,
       reconnectionAttempts: 5,
